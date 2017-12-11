@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:longClickable="true"
+        android:id="@+id/lists"
+        />
+
+    <Button
+        android:text="Сохранить"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="savebase"
+        android:id="@+id/save2" />
+
+    <Button
+        android:text="Загрузить"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick=" loadbase"
+        android:id="@+id/load" />
+
+    <Button
+        android:text="Удалить"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:onClick="deleteclick"/>
+
+    <Button
+        android:text="Добавить"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addClick"
+        android:id="@+id/add" />
+
+
+
+</LinearLayout>

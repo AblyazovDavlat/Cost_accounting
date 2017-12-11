@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RadioButton
+        android:text="Расходы"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/radioButtonR" />
+
+    <RadioButton
+        android:text="Доходы"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioButtonR"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:id="@+id/radioButtonD" />
+
+    <EditText
+        android:hint="Описание"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/information"
+        android:layout_below="@+id/radioButtonR"
+        android:layout_alignStart="@+id/radioButtonR"
+        android:layout_toStartOf="@+id/radioButtonD" />
+
+    <TextView
+        android:text="Введите данные"
+        android:textSize="25dp"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:hint="Сумма"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summa"
+        android:layout_alignTop="@+id/information"
+        android:layout_alignEnd="@+id/radioButtonD" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:id="@+id/save"
+        android:onClick="saveClick"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/information"
+        android:layout_alignStart="@+id/information" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отмена"
+        android:id="@+id/cansel"
+        android:onClick="cancelClick"
+        android:layout_below="@+id/save"
+        android:layout_alignEnd="@+id/radioButtonR"
+        android:layout_marginTop="15dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RGroup"
+        />
+
+</RelativeLayout>
